@@ -71,16 +71,19 @@
     }
 
     /* ── Header (pinned, desktop) ── */
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      padding: var(--pad);
-      display: grid;
-      grid-template-columns: 4fr 5fr 3fr;
-      align-items: start;
-      gap: var(--gap);
-    }
+      .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: var(--pad);
+  display: grid;
+  grid-template-columns: 4fr 5fr 3fr;
+  gap: var(--gap);
+
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
 
     .header__name {
       font-family: var(--f-display);
