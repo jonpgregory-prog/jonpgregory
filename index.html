@@ -8,27 +8,29 @@
 
   <style>
     /* ── Fonts ── */
-    @font-face {
-      font-family: "Alte Haas Grotesk";
-      src: url("https://type.cargo.site/files/AlteHaasGrotesk-Regular.woff") format("woff");
-      font-weight: 400;
-      font-style: normal;
-      font-display: block;
-    }
-    @font-face {
-      font-family: "Alte Haas Grotesk";
-      src: url("https://type.cargo.site/files/AlteHaasGrotesk-Bold.woff") format("woff");
-      font-weight: 700;
-      font-style: normal;
-      font-display: block;
-    }
-    @font-face {
-      font-family: "Monument Grotesk Variable";
-      src: url("https://type.cargo.site/files/CargoMonumentGroteskPlusVariable.woff2") format("woff2-variations");
-      font-weight: 200 1000;
-      font-style: normal;
-      font-display: block;
-    }
+@font-face {
+  font-family: "Alte Haas Grotesk";
+  src: url("fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alte Haas Grotesk";
+  src: url("fonts/AlteHaasGroteskBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* ── Inter Variable ── */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
     /* ── Reset ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -42,8 +44,8 @@
       --c-tag:     rgba(85,194,23,0.85);
       --c-rule:    rgba(0,0,0,0.75);
       --c-bg:      #fff;
-      --f-display: "Alte Haas Grotesk", sans-serif;
-      --f-body:    "Monument Grotesk Variable", sans-serif;
+  --f-display: "Alte Haas Grotesk", sans-serif;
+  --f-body: "Inter", sans-serif;
       --pad:       4rem;
       --gap:       1rem;
     }
