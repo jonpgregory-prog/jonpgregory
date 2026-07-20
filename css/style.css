@@ -141,12 +141,13 @@
       cursor: pointer;
     }
 
-    .project__thumb {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      display: block;
-    }
+.project__thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: #e8e8e8; /* Added: provides a smooth solid background color before video autoplays */
+}
 
     /* Placeholder tile for projects without a real image */
     .project__thumb--placeholder {
