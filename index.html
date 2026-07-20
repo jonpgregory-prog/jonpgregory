@@ -37,19 +37,24 @@
     <div class="grid">
 
       <!-- Project 1 -->
+
       <a class="project" href="bowral-honey-farm.html">
-        <img
-          class="project__thumb"
-          src="images/bowral-honey-farm.gif"
-          alt="Bowral Honey Farm Profile"
-          loading="lazy"
-          onerror="this.outerHTML='<div class=\'project__thumb project__thumb--placeholder\'>Image</div>'"
-        >
-        <div class="project__caption">
-          <span class="project__title">Bowral Honey Farm Profile</span>
-          <span class="project__tag">Officeworks</span>
-        </div>
-      </a>
+  <video 
+    class="project__thumb" 
+    autoplay 
+    loop 
+    muted 
+    playsinline
+    poster="images/bowral-honey-farm-fallback.jpg">
+    <source src="images/bowral-honey-farm.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="project__caption">
+    <span class="project__title">Bowral Honey Farm Profile</span>
+    <span class="project__tag">Officeworks</span>
+  </div>
+</a>
+
 
       <!-- Project 2 -->
       <a class="project" href="#">
