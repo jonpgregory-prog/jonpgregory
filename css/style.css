@@ -149,6 +149,11 @@
   background: #e8e8e8; /* Added: provides a smooth solid background color before video autoplays */
 }
 
+video.project__thumb {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
     /* Placeholder tile for projects without a real image */
     .project__thumb--placeholder {
       width: 100%;
