@@ -142,26 +142,17 @@
     }
 
 .project__media {
-  position: relative;
   width: 100%;
-  padding-top: 75%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: #e8e8e8;
 }
 
-.project__thumb {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-}
-
 .project__media .project__thumb {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
-  aspect-ratio: auto;
+  object-fit: cover;
+  display: block;
 }
 
     /* Placeholder tile for projects without a real image */
