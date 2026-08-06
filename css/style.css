@@ -148,11 +148,20 @@
   background: #e8e8e8;
 }
 
+.project__thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
 .project__media .project__thumb {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transform: scale(1.015);
+  -webkit-transform: scale(1.015);
 }
 
     /* Placeholder tile for projects without a real image */
