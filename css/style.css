@@ -141,19 +141,6 @@
       cursor: pointer;
     }
 
-.project__thumb {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-  background: #e8e8e8; /* Added: provides a smooth solid background color before video autoplays */
-}
-
-video.project__thumb {
-  transform: translateZ(0);
-  backface-visibility: hidden;
-}
-
 .project__media {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -161,12 +148,17 @@ video.project__thumb {
   background: #e8e8e8;
 }
 
-.project__media video {
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  margin: -1px;
+.project__thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
+}
+
+.project__media .project__thumb {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
 }
 
     /* Placeholder tile for projects without a real image */
