@@ -155,6 +155,21 @@ video.project__thumb {
   backface-visibility: hidden;
 }
 
+.project__media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e8e8e8;
+}
+
+.project__media video {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin: -1px;
+  object-fit: cover;
+  display: block;
+}
+
     /* Placeholder tile for projects without a real image */
     .project__thumb--placeholder {
       width: 100%;
