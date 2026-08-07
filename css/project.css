@@ -44,6 +44,18 @@
   display: block;
 }
 
+/* Modifier: width fills the column, height flows naturally —
+   same behaviour as .media-block--auto, for hero images that
+   shouldn't be cropped to 16:9. */
+.hero--auto {
+  aspect-ratio: unset;
+  background: none;
+}
+.hero--auto img {
+  height: auto;
+  object-fit: unset;
+}
+
 /* ── Title / intro block ── */
 .intro {
   display: grid;
