@@ -1,1 +1,93 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bowral Honey Farm Profile — Jon Gregory Art Direction + Design</title>
+  <!--
+    ══════════════════════════════════════════════════════════════
+    PROJECT PAGE TEMPLATE
+    To make a new case-study page: duplicate this file, then only
+    touch the parts marked EDIT below. Everything else (header,
+    structure, classes) should stay the same across all project
+    pages so they keep matching the index and each other.
+    ══════════════════════════════════════════════════════════════
+  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+<!-- Desktop header (identical markup to index.html) -->
+<header class="header">
+  <div>
+    <span class="header__name"><a href="index.html">Jon Gregory</a></span>
+  </div>
+  <div>
+    <span class="header__subtitle">Art Direction + Design</span>
+  </div>
+  <div>
+    <a class="header__about" href="about.html">About</a>
+  </div>
+</header>
+<!-- Mobile header -->
+<header class="header--mobile">
+  <a href="index.html"><span class="header__name">Jon Gregory</span></a><br>
+  <a class="header__about" href="about.html">About</a>
+</header>
+<main class="main">
+  <!-- Hero media — EDIT: YouTube embed, plays in place, no autoplay -->
+  <div class="hero hero--video">
+    <iframe
+      src="https://www.youtube.com/embed/R8MkqYGCPKY"
+      title="Bowral Honey Farm Profile"
+      frameborder="0"
+      allow="accelerated-video; encrypted-media; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <!-- Title + intro copy -->
+  <div class="intro">
+    <div>
+      <!-- EDIT: project title + client -->
+      <div class="intro__title">Bowral Honey Farm Profile</div>
+      <span class="intro__tag">Officeworks</span>
+    </div>
+    <!-- EDIT: intro copy -->
+    <div class="intro__copy">
+      This small business profile of a rural honey farm for Officeworks was a great example of content delivered across multiple channels. We created long-form video (above), an in-depth digital article and a magazine feature, plus paid and organic social assets.
+    </div>
+  </div>
+  <hr>
+  <!--
+    ── Content sections ──
+    EDIT: duplicate a .section block for each additional asset,
+    changing the label text and the media inside .media-block.
+    Use class="media-block media-block--square" for square/vertical
+    assets (e.g. social video) instead of the default 16:9.
+  -->
+<div class="section">
+  <span class="section-label">Magazine article</span>
+  <div class="media-block media-block--auto"><img src="images/bowral_magazine.jpg" alt="Magazine article spread"></div>
+</div>
+  <hr>
+  <div class="section">
+  <span class="section-label">Organic social carousel</span>
+  <div class="media-block media-block--auto"><img src="images/bowral_social.jpg" alt="Organic social carousel"></div>
+</div>
+  <hr>
+<div class="section">
+  <span class="section-label">Paid social video</span>
+  <div class="media-block media-block--square">
+    <video controls playsinline poster="images/BOWRAL-HONEY-PAID-1080x1080_3.jpg">
+      <source src="images/BOWRAL-HONEY-PAID-1080x1080_3.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+  <hr>
+  <!-- Prev / Index / Next — EDIT: point to actual neighbouring projects -->
+  <div class="page-nav">
+    ← <a href="#">Prev</a> &nbsp;&nbsp; <a href="index.html">Index</a> &nbsp;&nbsp; <a href="#">Next</a> →
+  </div>
+</main>
+</body>
+</html>
