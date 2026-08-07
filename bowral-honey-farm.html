@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bowral Honey Farm Profile — Jon Gregory Art Direction + Design</title>
-
   <!--
     ══════════════════════════════════════════════════════════════
     PROJECT PAGE TEMPLATE
@@ -14,12 +13,10 @@
     pages so they keep matching the index and each other.
     ══════════════════════════════════════════════════════════════
   -->
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/project.css">
 </head>
 <body>
-
 <!-- Desktop header (identical markup to index.html) -->
 <header class="header">
   <div>
@@ -32,27 +29,22 @@
     <a class="header__about" href="about.html">About</a>
   </div>
 </header>
-
 <!-- Mobile header -->
 <header class="header--mobile">
   <a href="index.html"><span class="header__name">Jon Gregory</span></a><br>
   <a class="header__about" href="about.html">About</a>
 </header>
-
 <main class="main">
-
-  <!-- Hero media — EDIT: swap video/poster or replace with an <img> -->
-  <div class="hero">
-    <video
-      autoplay
-      loop
-      muted
-      playsinline
-      poster="images/bowral-honey-farm.jpg">
-      <source src="images/bowral-honey-farm.mp4" type="video/mp4">
-    </video>
+  <!-- Hero media — EDIT: YouTube embed, plays in place, no autoplay -->
+  <div class="hero hero--video">
+    <iframe
+      src="https://www.youtube.com/embed/R8MkqYGCPKY"
+      title="Bowral Honey Farm Profile"
+      frameborder="0"
+      allow="accelerated-video; encrypted-media; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
-
   <!-- Title + intro copy -->
   <div class="intro">
     <div>
@@ -65,9 +57,7 @@
       This small business profile of a rural honey farm for Officeworks was a great example of content delivered across multiple channels. We created long-form video (above), an in-depth digital article and a magazine feature, plus paid and organic social assets.
     </div>
   </div>
-
   <hr>
-
   <!--
     ── Content sections ──
     EDIT: duplicate a .section block for each additional asset,
@@ -75,21 +65,16 @@
     Use class="media-block media-block--square" for square/vertical
     assets (e.g. social video) instead of the default 16:9.
   -->
-
 <div class="section">
   <span class="section-label">Magazine article</span>
   <div class="media-block media-block--auto"><img src="images/bowral_magazine.jpg" alt="Magazine article spread"></div>
 </div>
-
   <hr>
-
   <div class="section">
   <span class="section-label">Organic social carousel</span>
   <div class="media-block media-block--auto"><img src="images/bowral_social.jpg" alt="Organic social carousel"></div>
 </div>
-
   <hr>
-
 <div class="section">
   <span class="section-label">Paid social video</span>
   <div class="media-block media-block--square">
@@ -98,15 +83,11 @@
     </video>
   </div>
 </div>
-
   <hr>
-
   <!-- Prev / Index / Next — EDIT: point to actual neighbouring projects -->
   <div class="page-nav">
     ← <a href="#">Prev</a> &nbsp;&nbsp; <a href="index.html">Index</a> &nbsp;&nbsp; <a href="#">Next</a> →
   </div>
-
 </main>
-
 </body>
 </html>
