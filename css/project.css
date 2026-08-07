@@ -32,6 +32,18 @@
   font-size: 1.6rem;
 }
 
+/* Add to css/project.css, right next to the existing .hero rules.
+   .hero already sets aspect-ratio: 16/9 + overflow: hidden and
+   already sizes `video` and `img` — this just adds `iframe` to
+   that same list so the YouTube embed fills the same box. */
+
+.hero iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 /* ── Title / intro block ── */
 .intro {
   display: grid;
