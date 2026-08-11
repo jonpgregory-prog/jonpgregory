@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Brief ABC — Jon Gregory Art Direction + Design</title>
+  <!--
+    ══════════════════════════════════════════════════════════════
+    PROJECT PAGE TEMPLATE
+    To make a new case-study page: duplicate this file, then only
+    touch the parts marked EDIT below. Everything else (header,
+    structure, classes) should stay the same across all project
+    pages so they keep matching the index and each other.
+    ══════════════════════════════════════════════════════════════
+  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+<!-- Desktop header (identical markup to index.html) -->
+<header class="header">
+  <div>
+    <span class="header__name"><a href="index.html">Jon Gregory</a></span>
+  </div>
+  <div>
+    <span class="header__subtitle">Art Direction + Design</span>
+  </div>
+  <div>
+    <a class="header__about" href="about.html">About</a>
+  </div>
+</header>
+<!-- Mobile header -->
+<header class="header--mobile">
+  <a href="index.html"><span class="header__name">Jon Gregory</span></a><br>
+  <a class="header__about" href="about.html">About</a>
+</header>
+<main class="main">
+  <!-- Hero media — EDIT: direct mp4 file, plays in place, no autoplay -->
+  <div class="hero">
+    <video controls playsinline>
+      <source src="http://mpegmedia.abc.net.au/innovation/tabpro/Archive/THE_BRIEF_SHOWREEL.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!-- Title + intro copy -->
+  <div class="intro">
+    <div>
+      <!-- EDIT: project title + client -->
+      <div class="intro__title">The Brief </div>
+      <span class="intro__tag">ABC</span>
+    </div>
+    <!-- EDIT: intro copy -->
+    <div class="intro__copy">
+The Brief from the ABC was a weekly tablet app (for iOS, Android and Windows) covering news and culture, with video/audio and interactivity. I was Lead Designer for all 50 issues, plus the six months before launch, developing UX design with wireframes and prototypes.    </div>
+  </div>
+  <hr>
+  <!--
+    ── Content sections ──
+    EDIT: duplicate a .section block for each additional asset,
+    changing the label text and the media inside .media-block.
+    Use class="media-block media-block--square" for square/vertical
+    assets (e.g. social video) instead of the default 16:9.
+  -->
+  <div class="section">
+    <span class="section-label">Brief sample pages</span>
+    <div class="spirit-slideshow" data-slideshow>
+      <div class="spirit-slideshow__track">
+        <div class="spirit-slideshow__slide"><img src="images/BRIEF-PAGE1.jpg" alt="Brief sample pages"></div>
+        <div class="spirit-slideshow__slide"><img src="images/BRIEF-PAGE2.jpg" alt="Brief sample pages"></div>
+        <div class="spirit-slideshow__slide"><img src="images/BRIEF-PAGE3.jpg" alt="Brief sample pages"></div>
+        <div class="spirit-slideshow__slide"><img src="images/BRIEF-PAGE4.jpg" alt="Brief sample pages"></div>
+      </div>
+      <button class="spirit-slideshow__nav spirit-slideshow__nav--prev" aria-label="Previous spread">←</button>
+      <button class="spirit-slideshow__nav spirit-slideshow__nav--next" aria-label="Next spread">→</button>
+    </div>
+  </div>
+  <hr>
+  <!-- Prev / Index / Next — EDIT: point to actual neighbouring projects -->
+  <div class="page-nav">
+    ← <a href="#">Prev</a> &nbsp;&nbsp; <a href="index.html">Index</a> &nbsp;&nbsp; <a href="#">Next</a> →
+  </div>
+</main>
+
+<!-- Slideshow behaviour — required for the prev/next buttons to work -->
+<script>
+document.querySelectorAll('[data-slideshow]').forEach(el => {
+  const track = el.querySelector('.spirit-slideshow__track');
+  const slides = el.querySelectorAll('.spirit-slideshow__slide');
+  let index = 0;
+  const go = i => {
+    index = (i + slides.length) % slides.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  };
+  el.querySelector('.spirit-slideshow__nav--prev').onclick = () => go(index - 1);
+  el.querySelector('.spirit-slideshow__nav--next').onclick = () => go(index + 1);
+});
+</script>
+</body>
+</html>
