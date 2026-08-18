@@ -204,3 +204,13 @@
   .intro__tag   { font-size: 1.6rem; }
   .intro__copy  { font-size: 1.7rem; }
 }
+
+.media-row--thirds .media-block {
+  flex: 1;
+  width: auto; /* overrides the fixed 30% from --small if still present */
+}
+
+.media-block--square-lg {
+  aspect-ratio: 1 / 1;
+  max-width: 640px;
+}
