@@ -65,9 +65,7 @@
 
     /* ── Header (pinned, desktop) ── */
       .header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: static;
   padding: var(--pad);
   display: grid;
   grid-template-columns: 4fr 5fr 3fr;
@@ -82,7 +80,6 @@
   line-height: 1.1;
   letter-spacing: 0.003em;
   white-space: nowrap;
-  background: rgba(255,255,255,0.7);
   padding: 0.08em 0.4em;
   display: inline-block;
         margin-left: -0.4em;
