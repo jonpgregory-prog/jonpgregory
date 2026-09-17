@@ -92,7 +92,6 @@
   color: var(--c-grey);
   line-height: 1.1;
   letter-spacing: 0;
-  background: rgba(255,255,255,0.7);
   padding: 0.08em 0.4em;
   display: inline-block;
        margin-left: -0.4em;
@@ -104,7 +103,6 @@
   font-weight: 400;
   color: var(--c-grey);
   line-height: 1.1;
-  background: rgba(255,255,255,0.7);
   padding: 0.08em 0.4em;
   display: inline-block;
        margin-right: -0.4em;
@@ -208,11 +206,11 @@
       display: none;
       text-align: center;
       padding: 2rem;
-      border-bottom: 1px solid var(--c-rule);
+      
     }
 
     .header--mobile .header__name {
-      font-size: 4.2rem;
+      font-size: 3.6rem;
     }
 
     .header--mobile .header__about {
@@ -221,19 +219,74 @@
       display: inline-block;
       margin-top: 0.5rem;
     }
+/* ── About page ── */
 
-    /* ── Responsive ── */
-    @media (max-width: 768px) {
-      :root { --pad: 1.5rem; }
+.about__intro p {
+  max-width: 550px;
+}
 
-      .header { display: none; }
-      .header--mobile { display: block; }
+.about__section {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: var(--gap);
+  padding: 2rem 0;
+  border-top: 1px solid var(--c-rule);
+}
 
-      .grid {
-        grid-template-columns: 1fr;
-      }
+.about__section h2 {
+  font-family: var(--f-display);
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--c-grey);
+}
 
-      .project__title { font-size: 2.4rem; }
-      .project__tag   { font-size: 1.6rem; }
-      .section-label  { font-size: 2.4rem; }
-    }
+.about__section p {
+  font-family: var(--f-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--c-body);
+}
+
+.about__section a:hover {
+  opacity: 0.5;
+}
+ 
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  :root { --pad: 1.5rem; }
+
+  .header { display: none; }
+  .header--mobile { display: block; }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project__title { font-size: 2.4rem; }
+  .project__tag   { font-size: 1.6rem; }
+  .section-label  { font-size: 2.4rem; }
+
+  .about__intro {
+    margin: 0;
+  }
+
+  .about__intro p {
+    max-width: none;
+  }
+
+  .about__section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 0 3rem;
+  }
+
+  .about__section h2 {
+    font-size: 1.9rem;
+  }
+
+  .about__section p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
