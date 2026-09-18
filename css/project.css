@@ -141,6 +141,10 @@
   width: 30%;
 }
 
+.media-block--medium {
+  width: 66%;
+}
+
 /* ── Spirit magazine slideshow ──
    Click-through image carousel, replicating a Cargo.site
    gallery-slideshow with plain HTML/CSS/JS. */
